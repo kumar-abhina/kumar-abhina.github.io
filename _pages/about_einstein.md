@@ -1,22 +1,3 @@
----
-layout: about
-title: about
-permalink: /
-subtitle: Pursuing Masters in Robotics. | Exploring reinforcement learning and intelligent manipulation.
-
-profile:
-  align: right
-  image: profile.png
-  image_circular: false # crops the image to make it circular
-  address: >
-    <p>Boston, MA, 02120</p>
-
-news: false  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
----
-
 *Welcome to my robotics universe, where algorithms meet dexterity, and robots learn to make sense of the world!*
 
 Hi! I am Abhinav, a **Masters in Robotics** student with a focus on **reinforcement learning** and **robotic manipulation** at **[Northeastern University](https://graduate.northeastern.edu/program/master-of-science-in-robotics-17772/){:target="\_blank"}**. I completed my Bachelor's in **Robotics Engineering** from **[SRM University](https://example.com){:target="\_blank"}**, India. My passion for intelligent systems and autonomous robots inspired me to delve deeper into these cutting-edge technologies.
