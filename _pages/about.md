@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Gard Student at Northeastern University</p>
-    <p>394 Center Street</p>
+    <p>Center Street, Jamica Plain</p>
     <p>Boston, MA 02130</p>
 
 news: true # includes a list of news items

@@ -19,7 +19,7 @@
   contents:
     - title: Master of Science in Robotics
       institution: Northeastern University (NEU), Boston, MA
-      year: "Dec 2024 (Expected)"
+      year: "Dec 2024"
       description:
         - "Relevant Coursework: Reinforcement Learning, Deep Learning and Pattern Recognition, Mobile Robotics, Computer Vision, Numerical Optimization, Autonomous Field Robotics, Control Systems"
         - "GPA: 3.8"
@@ -69,7 +69,7 @@
 - title: Academic Projects
   type: time_table
   contents:
-    - title: Structure from Motion using Bundle Adjustment
+    - title: <a href="https://kumar-abhina.github.io/projects/1_project/  ">Structure from Motion using Bundle Adjustment</a>
       year: Sept 2024 - Dec 2024
       description:
         - "Implemented classical 3D reconstruction on an NVIDIA Jetson Nano with ~100 images."
