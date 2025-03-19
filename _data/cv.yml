@@ -2,96 +2,99 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: "Abhinav Kumar"
+    - name: Location
+      value: "Boston, MA"
+    - name: Phone
+      value: "857-693-9631"
+    - name: Email
+      value: "kumar.abhina@northeastern.edu"
+    - name: LinkedIn
+      value: "https://www.linkedin.com/in/abhinav-kumar-777b18211/"
+    - name: GitHub
+      value: "https://github.com/kumar-abhina"
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master of Science in Robotics
+      institution: Northeastern University (NEU), Boston, MA
+      year: "Dec 2024 (Expected)"
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Relevant Coursework: Reinforcement Learning, Deep Learning and Pattern Recognition, Mobile Robotics, Computer Vision, Numerical Optimization, Autonomous Field Robotics, Control Systems"
+        - "GPA: 3.8"
+
+    - title: Bachelor of Technology in Robotics Engineering
+      institution: SRM Institute of Science and Technology, Chennai, India
+      year: "May 2022"
       description:
-        - Description 1.
-        - Description 2.
+        - "Relevant Coursework: Robotics 101, Machine Vision, Planning and Decision Making in Robotics, AI for Robotics and Vision"
+        - "GPA: 9.14"
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant
+      institution: Helping Hands Laboratory, Northeastern University, Boston, MA
+      year: Oct 2022 - Current
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - "Developed a few-shot imitation learning algorithm using Vision Transformers and Deep Learning, enabling robots to learn object manipulation from minimal demonstrations."
+        - "Fine-tuned real-time segmentation and DETR object detection models in Detectron, achieving a 23% higher AP-75 score compared to Mask R-CNN."
+        - "Implemented planar grasp detection using SE(2)-equivariant CNNs to improve grasp learning efficiency and real-time performance."
+        - "Published paper: One Shot Imitation Learning via Interaction Warping (CoRL 2023, Arxiv: https://arxiv.org/abs/2306.12392)."
+
+    - title: Robotics/Automation Engineer
+      institution: NUVERA Fuel Cells, Boston, MA
+      year: Jan 2024 - July 2024
       description:
-        - Description 1.
-        - Description 2.
+        - "Designed and developed an automated stacking system to categorize Off-Stack Fuel Cells (OFFs), increasing sorting efficiency by 40%."
+        - "Programmed a UR10 robot-based pick-and-place system in ROS2 and MoveIt2, integrating a Cognex smart camera with OpenCV to boost accuracy by 35% and reduce misplacements by 25%."
+        - "Developed Python scripts on Linux to automate system monitoring, logging, and debugging, improving deployment efficiency on NVIDIA Jetson hardware."
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Automation and Robotics Intern
+      institution: FESTO India, Chennai, India
+      year: June 2021 - Oct 2021
       description:
+        - "Optimized industrial electro-pneumatic frameworks, reducing equipment cycle time from 12 seconds to 8 seconds per operation."
+        - "Simulated diverse industrial manipulator operations using CIROS; designed control parameters that reduced production time by 11%."
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Robotics Software Engineer
+      institution: DRDO Lab, Hyderabad, India
+      year: July 2020 - Dec 2020
+      description:
+        - "Developed a 4WD robot for lane tracking and autonomous path following via ROS-based object detection and SLAM, cutting navigation errors by 50%."
+        - "Integrated IMU and GPS data with an Extended Kalman Filter (EKF), achieving a 15 cm RMSE in drone position estimation."
+        - "Created a real-time autonomous quadcopter landing system utilizing fiducial markers and pose estimation, improving landing accuracy by 25%."
 
-- title: Open Source Projects
+- title: Academic Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Structure from Motion using Bundle Adjustment
+      year: Sept 2024 - Dec 2024
+      description:
+        - "Implemented classical 3D reconstruction on an NVIDIA Jetson Nano with ~100 images."
+        - "Optimized re-projection error from 600 px to 3 px using Cholesky-based BA."
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: Image Mosaicing and Depth Estimation
+      year: Sept 2023 - Dec 2023
+      description:
+        - "Formulated a panorama-generation algorithm for 25+ images using feature detection, RANSAC, and Homography."
+        - "Conducted multi-view stereo depth estimation with monocular cameras and pose-graph optimization."
 
-- title: Academic Interests
+    - title: Autonomous Navigation and SLAM
+      year: Aug 2022 - Dec 2022
+      description:
+        - "Developed an autonomous robot for reconnaissance in simulated disaster zones, employing Cartographer SLAM and frontier exploration."
+        - "Achieved 87% success rate in victim detection using extrinsic camera calibration."
+
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Programming Languages
+      details: "C++, Python, MATLAB, JavaScript"
+    - title: Software and Frameworks
+      details: "ROS, ROS2, NVIDIA Isaac Sim, Gazebo, CUDA, GTSAM, Pybullet, Mujoco"
+    - title: Libraries and Tools
+      details: "OpenCV, scikit-learn, Pandas, NumPy, PyTorch, Eigen, Point Cloud Library, YOCTO, Modbus"
+    - title: DevOps & Cloud
+      details: "AWS Services, Docker, CI/CD Pipelines, MLops"
