@@ -10,7 +10,7 @@ category: work
 ---
 
 Introduction
-In recent years, mobile robots have proven invaluable for **disaster response** by enabling safe and efficient reconnaissance of dangerous environments. This project implements a 0**TurtleBot3** with **SLAM** and **AprilTag** detection in ROS to identify and localize “victims” (AprilTags) in an unknown environment.
+In recent years, mobile robots have proven invaluable for **disaster respons** by enabling safe and efficient reconnaissance of dangerous environments. This project implements a 0**TurtleBot3** with **SLAM** and **AprilTag** detection in ROS to identify and localize “victims” (AprilTags) in an unknown environment.
 
 ## Problem Statement
 Emergency scenarios like collapsed buildings or hazardous areas often require robots to:
