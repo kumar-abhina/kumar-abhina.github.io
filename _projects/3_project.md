@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Homography Estimation and Image Stitching
-description: Panoramic image stitching for underwater images in low lighting conditions
-img: assets/Projects/T.jpg
+description: Panoramic image stitching set of consecutive images using feature matchimng and Homography estimation
+img: assets/Projects/image_stiching/thumbnail.jpg
 tags: formatting math
 importance: 3
 category: work
