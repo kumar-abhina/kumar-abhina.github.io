@@ -3,6 +3,7 @@ layout: page
 title: Navigation stack using IMU and RTK-GPS with ROS.
 description: ROS drivers for navigation stack based on IMU and GPS sensors
 img: assets/Projects/Imu_and_gps/p1.png
+tags
 importance: 4
 category: work
 ---
