@@ -2,13 +2,13 @@
 layout: page
 title: Structure From Motion
 description: 3D reconstruction based on sequence of images
-img: /assets/img/SFM/SFM.png
+img: /assets/img/SFM/SFM_thumb.gif
 tags: formatting math
 importance: 1
 category: work
 ---
 
-<a href="https://github.com/yashmewada9618/Structure-From-Motion-by-factorization">GitHub</a> \
+<a href="https://github.com/kumar-abhina/Structure-From-Motion_using_Bundle_Adjustment">GitHub</a> \
 This project details a novel approach for Structure from Motion based on optical flow and factorization for the reconstruction of surfaces with few textures. 
 An original image search and grouping strategy allows to the reconstruction of each 3D scene point using a large set of 2D homologous points extracted from a reference image
 and its superimposed images acquired from different viewpoints. \

@@ -3,7 +3,7 @@ layout: page
 title: Navigation stack using IMU and RTK-GPS with ROS.
 description: ROS drivers for navigation stack based on IMU and GPS sensors
 img: assets/Projects/Imu_and_gps/p1.png
-tags
+tags: formatting math
 importance: 4
 category: work
 ---
@@ -19,6 +19,10 @@ Developed ROS drivers for 9 axis IMU, Standard GPS Puck and RTK based GPS device
 - Velocity Estimation
 - Dead Reckoning
 - Magnetometer Calibration
+
+# Driver overview For GPS And IMU(Vn100)
+
+## Driver code conatins the Ros Node and launch files for launching the driver and getting the data output from both the sensor and also fixes
 
 
 <div class="row">

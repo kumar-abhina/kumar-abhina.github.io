@@ -2,7 +2,7 @@
 layout: page
 title: Homography Estimation and Image Stitching
 description: Panoramic image stitching set of consecutive images using feature matchimng and Homography estimation
-img: assets/Projects/image_stiching/thumbnail.jpg
+img: assets/Projects/image_stiching/church.gif
 tags: formatting math
 importance: 3
 category: work
@@ -12,7 +12,7 @@ category: work
 
 ## Overview
 
-This project demonstrates the creation of a seamless panoramic image from a set of 5 underwater images captured in low lighting conditions. The process leverages robust feature detection, matching, homography estimation with RANSAC, and final image stitching with blending techniques to minimize seams.
+This project demonstrates the creation of a seamless panoramic image from a set of 5 images captured by roating the camera at one place and refining the Homography estimation between them fro image stiching task. The process leverages robust feature detection, matching, homography estimation with RANSAC, and final image stitching with blending techniques to minimize seams.
 
 ## Pipeline Details
 
@@ -22,9 +22,17 @@ This project demonstrates the creation of a seamless panoramic image from a set 
 - **Corner Response Calculation:** The Harris R function quantifies the strength of detected corners.
 
 ### 2. Feature Matching
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="assets/Projects/image_stiching/2_3_inliers.jpg" title="Inliers" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="assets/Projects/image_stiching/featured.gif" title="Outliers" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
 - **Descriptor Extraction:** Feature descriptors are extracted from the detected corner points.
 - **Normalized Cross Correlation (NCC):**  
-  Correspondences between images are established using NCC, defined as:
+  Correspondences between images are established using NCC, defined as after getting the correspondence we need to filter out the wrong correspondences such as outlier:
 
   $$
   NCC = \frac{\sum_{i=1}^{25} x(i) \, y(i)}{\sqrt{\left(\sum_{i=1}^{25} x(i)^2\right) \left(\sum_{i=1}^{25} y(i)^2\right)}}
@@ -62,23 +70,19 @@ This project demonstrates the creation of a seamless panoramic image from a set 
 ### 4. Image Rectification, Stitching, and Blending
 
 - **Warping:**  
-  Each image is warped into a common coordinate frame using the estimated homography matrices.
+  Each image is warped into a common coordinate frame using the estimated homography matrices.genrally i took the 3 or the middle image in the sample to be my first image and calculated homgrahy in both the sides and then warped them to the persepctive of the miidle image stcing from both sides
 
 - **Stitching:**  
   The warped images are stitched together to form a continuous panorama.
 
 - **Blending:**  
-  Overlapping regions are blended using techniques that smooth transitions and minimize visible seams, resulting in a cohesive final image.
+  Overlapping regions are blended using techniques that smooth transitions and minimize visible seams, resulting in a cohesive final image. there are many blending techniques that can be used to blend image like - Alpha blending , Weighted avergae blending Etc
 
 ### 5. Constructing the Panorama from 5 Images
-
-The complete pipeline is applied to a dataset of 5 images. The steps include:
 - **Feature Matching and RANSAC Filtering:**  
   Feature correspondences between each adjacent pair of images are established, and RANSAC is used to determine inliers, discarding outliers to accurately estimate the homography matrix.
-
 - **Homography Estimation and Image Rectification:**  
   Using the inlier set, the homography matrix is computed for each image pair, and images are rectified accordingly.
-
 - **Final Stitching and Blending:**  
   The rectified images are then stitched together in sequence. Advanced blending techniques ensure a smooth transition across image boundaries.
 

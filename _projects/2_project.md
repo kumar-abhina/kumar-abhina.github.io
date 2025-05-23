@@ -1,7 +1,7 @@
 ---
 layout: page
-title: SLAM Using TurtleBot3
-description: a project with a background image and giscus comments
+title: Autonomous navigation and SLAM with turtlebot3
+description: a project with autonmous navigation of slam and apriltag detction for hence making a resuce robot for recon missions in a simulated diaster zone
 img: assets/Projects/Turtlebot_slam/T10.jpg
 tags: formatting math
 importance: 2
