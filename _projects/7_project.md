@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Pythonic Manipulation Stack for the Unitree G1 Robot
+title: Manipulation Stack for the Unitree G1 Robot &Robot learning
 description: Built a custom Python control stack for the Unitree G1 Robot for Inverse kinematics solver, Controller and Motion Planner 
-img: assets/Projects/Panda_arm_RL/DDPG_episodes/5.gif
+img: assets/Projects/Unitree_G1/thumbnail.gif
 tags: formatting math
 importance: 5
 category: work
@@ -52,6 +52,15 @@ Result: trajectories that track within 0.1 rad/s and 0.3 rad/s² of hardware lim
 * **Trajectory blending:** a quintic blend window that lets new splines splice into the active motion without abrupt torque jumps.  
 * **Safety layer:** soft-torque limit, velocity clamping, and an *instant hold* mode triggered by a watchdog if no new command is heard within 50 ms.
 
+### Dual-Arm Policy Training with LeRobot
+
+I’m also training an action policy for the dual-arm Unitree G1 using the LeRobot pipeline: synchronized camera streams feed a vision encoder, joint states and gripper signals form the proprioceptive branch, and the policy is optimized with behavior cloning plus action smoothing to keep impedance-friendly torques. I gathered demonstrations with a teleoperation pipeline and trained both ACT and diffusion policies for everyday tasks—toast bread, block stacking, snack picking, and similar manipulation—while using domain randomization on lighting and hand-held objects so the network transfers from staged demos to real assembly motions without brittle heuristics.
+
+<div class="row justify-content-center">
+  <div class="col-sm mt-3 mt-md-0">
+      {% include video.liquid path="assets/Projects/Unitree_G1/Motion Planner.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+  </div>
+</div>
 ### 5. System Integration
 
 | Aspect | Value |
@@ -68,8 +77,14 @@ Result: trajectories that track within 0.1 rad/s and 0.3 rad/s² of hardware lim
   <div class="col-sm mt-3 mt-md-0">
     {% include video.liquid path="assets/Projects/Unitree_G1/V2.mp4" title="Planner Roll-out" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
-      {% include video.liquid path="assets/Projects/Unitree_G1/Motion Planner.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-sm-5 mt-3 mt-md-0">
+      {% include video.liquid path="assets/Projects/Unitree_G1/clideo_editor_0306915380f6438888ba426299c62219.mp4" title="Multi-step Pick" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+  </div>
+  <div class="col-sm-5 mt-3 mt-md-0">
+      {% include video.liquid path="assets/Projects/Unitree_G1/copy_88FE5E70-92FF-40A2-883C-2CC1693A1EA9.MOV" title="Fine Alignment Trial" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
   </div>
 </div>
 
