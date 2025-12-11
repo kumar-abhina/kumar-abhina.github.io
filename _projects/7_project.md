@@ -83,9 +83,6 @@ I’m also training an action policy for the dual-arm Unitree G1 using the LeRob
   <div class="col-sm-5 mt-3 mt-md-0">
       {% include video.liquid path="assets/Projects/Unitree_G1/clideo_editor_0306915380f6438888ba426299c62219.mp4" title="Multi-step Pick" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
   </div>
-  <div class="col-sm-5 mt-3 mt-md-0">
-      {% include video.liquid path="assets/Projects/Unitree_G1/copy_88FE5E70-92FF-40A2-883C-2CC1693A1EA9.MOV" title="Fine Alignment Trial" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
-  </div>
 </div>
 
 
