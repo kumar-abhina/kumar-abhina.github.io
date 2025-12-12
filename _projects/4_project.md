@@ -8,7 +8,7 @@ importance: 4
 category: work
 ---
 
-<a href="https://github.com/yashmewada9618/ROS-navigation-stack-using-IMU-and-RTK-GPS">GitHub1</a>
+<a href="https://github.com/kumar-abhina/Navigation_Stack_using-IMU-And-GPS">GitHub1</a>
 
 <a href="https://github.com/yashmewada9618/Dead-Reckoning-using-IMU">GitHub2</a>
 
